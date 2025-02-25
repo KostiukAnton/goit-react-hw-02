@@ -19,7 +19,7 @@ export default function App() {
   const updateFeedback = (feedbackType) => {
     setFeedback((oldFeedback) => ({
       ...oldFeedback,
-      [feedbackType]: feedback[feedbackType] + 1,
+      [feedbackType]: oldFeedback[feedbackType] + 1,
     }));
   };
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
